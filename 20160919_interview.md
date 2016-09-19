@@ -10,6 +10,7 @@
 * localStorage 与sessionStorage 和cookie 的区别,localStorage和cookie的优劣分别在哪
 * 清除浮动的几种方法
 * 如何实现节流函数
+
 ## 编程:
 * 排序  冒泡排序的优化
 * 事件绑定的兼容处理
