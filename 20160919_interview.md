@@ -3,7 +3,7 @@
 * 垂直居中,display: table与table-cell的区别
 
   > table-cell与表格中<td>标签表现相同
-    如果只对元素设置display: table-cell而不给父元素设置display: table以及display: table-cell属性等,table-cell表现为普通块级元素
+    如果只对元素设置display: table-cell而不给父元素设置display: table以及display: table-row属性等,table-cell表现为普通块级元素
     同时继承table的一些特性,对高度敏感,对margin不敏感
 * 如何获取当前元素在页面中的位置
 * 如何使用fis进行数据模拟
