@@ -1,5 +1,23 @@
 
 * 如何遍历对象,使原型中的属性不被遍历出来
+
+> 通过hasOwnProperty检测属性是否存在于对象实例中还是存在于原型中
+```javascript
+    function eachObj() {
+    	this.a = 'aaa';
+    	this.b = 'bbb';
+    	this.c = 'ccc';
+    }
+    eachObj.prototype.aaa = 'protocccc';
+    var obj = new eachObj();
+    for(var i in obj ) {
+    	console.log(i,obj[i]);
+    	if (obj.hasOwnProperty(i)) {
+    		// 属性存在于对象实例中
+    		console.log(i,obj[i]);
+    	}
+    }
+```
 * 垂直居中,display: table与table-cell的区别
 
   > table-cell与表格中<td>标签表现相同
