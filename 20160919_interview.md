@@ -18,6 +18,7 @@
     	}
     }
 ```
+
 * 垂直居中,display: table与table-cell的区别
 
   > table-cell与表格中<td>标签表现相同
