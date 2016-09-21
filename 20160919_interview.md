@@ -24,7 +24,11 @@
   > table-cell与表格中<td>标签表现相同
     如果只对元素设置display: table-cell而不给父元素设置display: table以及display: table-row属性等,table-cell表现为普通块级元素
     同时继承table的一些特性,对高度敏感,对margin不敏感
+    
 * 如何获取当前元素在页面中的位置
+    >   使用元素的offsetLeft与offsetTop属性可以获取元素与父元素左上角的距离
+	    或直接使用getBoundingClientRect()方法,该方法返回一个对象,其中包含left,top,right,bottom,分别对应了该元素的左上角和右下角相对于浏览器窗口（viewport）左上角的距离。
+
 * 如何使用fis进行数据模拟
 
 * css定位相关知识
