@@ -32,6 +32,54 @@
 * 如何使用fis进行数据模拟
 
 * css定位相关知识
+    >	先设置两个普通的div
+	```html
+	<div class="a"></div>
+	<div class="b"></div>
+	```
+	然后设置两个元素的宽高
+	```css
+	.a {
+	  width: 100px;
+	  height: 100px;
+	  background-color: red;
+	}
+	.b {
+	  width: 100px;
+	  height: 100px;
+	  background-color: blue;
+	}
+	```
+	![normal](http://7xrltq.com1.z0.glb.clouddn.com/position_normal.jpeg)
+	接下来将a元素position设置为absolute,并设置top与left属性
+	position: absolute;会使元素脱离文档流,从而不再占据先前的文档位置,导致其后面的元素重新排列
+	
+	```css
+	.a {
+	  width: 100px;
+	  height: 100px;
+	  background-color: red;
+	  position: absolute;
+	  left:100px;
+	  top:100px;
+	}
+	```
+	![absolute](http://7xrltq.com1.z0.glb.clouddn.com/postion_absolute.jpeg)
+
+	重新改变a元素position属性,将其设置为relative,top,left不变
+	position: relative;不会改变文档流,只改变当前元素所处位置,相对于先前所在的文档位置进行定位,而其他元素正常排列
+	```css
+	.a {
+	  width: 100px;
+	  height: 100px;
+	  background-color: red;
+	  position: relative;
+	  left:100px;
+	  top:100px;
+	}
+	```
+	![relative](http://7xrltq.com1.z0.glb.clouddn.com/position_relative.jpeg)
+	
 * 事件委托
 * em rem 百分比的区别
 * localStorage 与sessionStorage 和cookie 的区别,localStorage和cookie的优劣分别在哪
