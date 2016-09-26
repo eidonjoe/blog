@@ -81,6 +81,7 @@
 	![relative](http://7xrltq.com1.z0.glb.clouddn.com/position_relative.jpeg)
 	
 * 事件委托
+	> 利用冒泡机制,对多个需要添加事件处理程序的元素添加一个统一的事件处理程序,这种方式称为事件委托.
 * em rem 百分比的区别
 * localStorage 与sessionStorage 和cookie 的区别,localStorage和cookie的优劣分别在哪
 * 清除浮动的几种方法
