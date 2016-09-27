@@ -84,6 +84,9 @@
 	> 利用冒泡机制,对多个需要添加事件处理程序的元素添加一个统一的事件处理程序,这种方式称为事件委托.
 * em rem 百分比的区别
 * localStorage 与sessionStorage 和cookie 的区别,localStorage和cookie的优劣分别在哪
+
+	> localStorage 跨越会话存储数据,客户端持久保存用户数据的数据的方案,有访问限制;sessionStorage存储某个特定会话数据,浏览器关闭即删除;cookie浏览器Http Cookie客户端存储会话信息,由服务器响应设置请求头
+	> localStorage不安全,存储大小为2.5MB-5MB,可以出发storage事件; cookie可以通过设置secure来通过https传输,存储大小2KB,可以指定失效时间
 * 清除浮动的几种方法
 * 如何实现节流函数
 
