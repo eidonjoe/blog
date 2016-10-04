@@ -90,6 +90,22 @@
 	> localStorage不安全,存储大小为2.5MB-5MB,可以触发storage事件; cookie可以通过设置secure来通过https传输,存储大小2KB,可以指定失效时间
 * 清除浮动的几种方法
 * 如何实现节流函数
+	> 某些事件会在用户操作的过程中连续触发,如果在事件处理程序内部尝试进行复杂的运算操作或是进行DOM操作,很可能引起浏览器崩溃
+	所以要控制事件处理程序不可以在没有时间间隔的情况下连续重复执行
+	
+	* 节流函数实现
+	```javascript 
+		function throttle(method, context) {
+			clearTioumeout(method.tId);
+			method.tId = setTimeout(function(){
+				method.call(context);
+			}, 100)
+		}
+	```
+	> > throttle()函数的第一个参数是指函数在哪个作用域中执行,函数在执行时会先清除在该作用域中设置的定时器,接下来创建一个新的定时器.第二个参数用来确保定时器代码可以在合适的环境中执行,若省略第二个参数则会在全局作用域中执行该方法.
+	
+	//注: setTimeout()中用到的函数环境总是window,所以若想在函数内部改变函数环境,可以传入上下文或用that存储this对象
+	
 
 ## 编程:
 * 排序  冒泡排序的优化
