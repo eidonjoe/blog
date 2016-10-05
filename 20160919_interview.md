@@ -111,6 +111,12 @@
 * 排序  冒泡排序的优化
 * 事件绑定的兼容处理
 * 区分数组与对象
+	> 
+	```javascript
+		function isArray (value) {
+			return Object.prototype.toString.call(value) == "[object Array]"
+		}
+	```
 
 
 * mongodb分页的实现,统计的实现
