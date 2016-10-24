@@ -96,7 +96,7 @@
 	* 节流函数实现
 	```javascript 
 		function throttle(method, context) {
-			clearTioumeout(method.tId);
+			clearTimeout(method.tId);
 			method.tId = setTimeout(function(){
 				method.call(context);
 			}, 100)
