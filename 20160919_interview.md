@@ -139,6 +139,14 @@
 * async defer
 * 如何编写Jquery插件
 * 如何向页面中添加一个节点
+	> 
+	```javascript
+	var body = document.getElementsByTagName('body')[0]
+	var div = document.createelement('div');
+	div.setAttribute('id',1)
+	body.appendChild(div)
+	```
+	
 
 
 
