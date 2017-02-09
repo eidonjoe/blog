@@ -111,14 +111,18 @@
 * 排序  冒泡排序的优化
 * 事件绑定的兼容处理
 * 区分数组与对象
-	> 
+
+	1.Array.isArray() // es5
+	
+	2.toString.call(value) == "[object Array]"
+	
 	```javascript
 		function isArray (value) {
 			return Object.prototype.toString.call(value) == "[object Array]"
 		}
 	```
-
-
+	3.通过构造函数判断, arr.constructor; // Array	
+	4.instanceof Array
 * mongodb分页的实现,统计的实现
 * 如何在前端实现require,AMD规范
 * 在浏览器的不同tab间如何进行通知
